@@ -1,44 +1,25 @@
-### This repository is no longer maintained!
+# Task 1 - Automate Code Deployment Using CI/CD Pipeline
 
-**For the most up to date test app to get you started on Heroku, head on over to [`node-js-getting-started`](https://github.com/heroku/node-js-getting-started).**
+## Objective
+Set up a CI/CD pipeline using GitHub Actions to build and deploy a Node.js app in a Docker container and push it to Docker Hub.
 
----
+## Steps Followed
+1. Forked the `nodejs-demo-app` repository.
+2. Added a `Dockerfile` to containerize the application.
+3. Created `.github/workflows/main.yml` for the GitHub Actions pipeline.
+4. Configured secrets in GitHub:
+   - `DOCKER_USERNAME` → My Docker Hub username
+   - `DOCKER_PASSWORD` → My Docker Hub access token
+5. Triggered the workflow by pushing changes to the `main` branch.
+6. Verified the image was pushed to Docker Hub successfully.
 
-# node-js-sample
+## Proof of Completion
+### Docker Hub Repository
+![Docker Hub Screenshot](https://github.com/user-attachments/assets/5d55fe75-61df-4975-835f-e5cd471150cf)
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+### GitHub Actions Successful Run
+![GitHub Actions Screenshot](https://github.com/user-attachments/assets/3f0ecf5f-6dcc-4a21-994f-2d7673f3dd72)
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
-cd node-js-sample
-npm install
-npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-heroku create
-git push heroku master
-heroku open
-```
-
-Alternatively, you can deploy your own copy of the app using the web-based flow:
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [10 Habits of a Happy Node Hacker](https://blog.heroku.com/archives/2014/3/11/node-habits)
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+## Deliverables
+- **GitHub Repo:** [https://github.com/ayishahiba/nodejs-demo-app](https://github.com/ayishahiba/nodejs-demo-app)
+- **Docker Hub Repo:** [https://hub.docker.com/r/ayishahiba/nodejs-demo-app](https://hub.docker.com/r/ayishahiba/nodejs-demo-app)
